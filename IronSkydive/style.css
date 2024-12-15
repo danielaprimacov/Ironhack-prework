@@ -89,3 +89,42 @@ h2 {
 .quote {
   font-size: 2.5em;
 }
+
+.dark-background {
+  background-color: rgb(25, 33, 41);
+  color: white;
+}
+
+#general-information .text {
+  font-size: 2em;
+  font-weight: 100;
+  text-align: center;
+}
+
+.link-btn {
+  background-color: rgb(67, 163, 230);
+  font-family: 'Roboto Condensed';
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.service-box {
+  font-size: 1.7em;
+  text-align: center;
+}
+
+.service-box img {
+  width: 125px;
+}
+
+#team .section-text {
+  font-size: 1.9em;
+  text-align: center;
+}
+
+#team .member-name {
+  font-size: 1.5em;
+  font-weight: 700;
+}
