@@ -75,7 +75,7 @@ h5 {
 
 
 h1, h2 {
-  line-height: 4em;
+  line-height: 2em;
 }
 
 .nav-bar {
@@ -92,6 +92,9 @@ h1, h2 {
 .nav-bar-ul {
   width: 1200px;
   margin: 0 auto;
+  
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .nav-bar-ul li {
@@ -108,11 +111,7 @@ h1, h2 {
   height: 650px;
   padding-top: 50px;
   
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  position: relative;
 }
 
 h1 img {
@@ -129,8 +128,9 @@ h2 {
 .quote {
   font-size: 2.5em;
   
-  margin-top: 20px;
-  margin-bottom: 50px;
+  position: absolute;
+  left: 10%;
+  bottom: 100px;
 }
 
 .dark-background {
@@ -138,12 +138,23 @@ h2 {
   color: white;
 }
 
+#general-information {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 #general-information .text {
   font-size: 2em;
   font-weight: 100;
   text-align: center;
   margin: 20px 0;
+}
+
+#general-information .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 370px;
 }
 
 .link-btn {
@@ -153,6 +164,15 @@ h2 {
   letter-spacing: 0.5px;
   text-align: center;
   text-decoration: none;
+  
+  padding: 10px 30px;
+}
+
+#structure > div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -209,6 +229,20 @@ h2 {
   width: 40%;
 }
 
+/* Target direct children of #team */
+#team > * {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Center the names above the images inside each article */
+#team > div > article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .schedule-table {
   margin: 0 auto 40px auto;
   font-size: 1.5em;
@@ -227,6 +261,10 @@ h2 {
   
   padding: 40px 100px;
   margin-bottom: 25px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .address {
@@ -250,4 +288,9 @@ h2 {
 footer h5 {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.map-frame {
+  height: 375px;
+  width: 60%;
 }
