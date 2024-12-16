@@ -90,6 +90,37 @@
     </section>
     <section id="schedule" class="container">
       <h3>Schedule</h3>
+      <form class="slot-form" action="/register" method="post">
+        <!-- Email field -->
+        <div class="slot-form-container">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <!-- Participant field -->
+        <div class="slot-form-container">
+          <label for="participants">Participants:</label>
+          <input type="number" id="participant" name="participants" placeholder="Number of participants" required>
+        </div>
+        <!-- Date field -->
+        <div class="slot-form-container">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <!-- Time field -->
+        <div class="slot-form-container">
+          <label for="time">Time:</label>
+          <select id="time" name="time" required>
+            <option value="early">9:00 - 11:00</option>
+            <option value="mid">12:00 - 14:00</option>
+            <option value="late">15:00 - 17:00</option>
+          </select>
+        </div>
+        
+        <!-- Submit button -->
+        <div class="slot-form-container">
+          <button type="submit">Reserve Yout Slot!</button>
+        </div>
+      </form>
       <table class="schedule-table" cellpadding="0" cellspacing="0">
         <thead>
           <tr>
